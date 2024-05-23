@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powersage: Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-gray-800 pl-5">
+        <div class="flex h-16 items-center">
+
+            <img class="h-8 w-auto mr-auto"
+                src="data:image/png;base64,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">
+
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main content -->
+    <div class="flex-grow">
+        <div class="text-center pt-8">
+            <h1 class="text-6xl font-bold text-slate-400 hover:text-sky-400 font-mono">PowerSage</h1>
+            <p class="pt-2 italic">Powersage: Empowering your world through electrical innovation.</p>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8">
+            <div class="card bg-base-100 shadow-md">
+                <div class="card-body">
+                    <h2 class="card-title">Power Output Lookup</h2>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Date</span>
+                        </label>
+                        <input type="number" id="dayInput" class="input input-bordered"
+                            placeholder="Enter day number (24-27)">
+                    </div>
+                    <button class="btn btn-primary mt-2" id="checkButton">Check Output</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <aside>
+            <p>&copy; 2024 - All rights reserved by PowerSage Ltd</p>
+        </aside>
+    </footer>
+
+    <!-- Modal Template -->
+    <template id="outputModalTemplate">
+        <div class="modal">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Power Output for Day <span id="outputDay"></span></h3>
+                <p id="outputMessage" class="py-4"></p>
+                <div class="modal-action">
+                    <button class="btn btn-secondary" id="closeButton">Close</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
